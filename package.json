@@ -10,6 +10,7 @@
     "express": "",
     "socket.io": "",
     "bower": "",
-    "grunt": ""
+    "grunt": "",
+    "grunt-wiredep": ""
   }
 }
