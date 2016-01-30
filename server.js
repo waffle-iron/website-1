@@ -1,12 +1,15 @@
 var http = require('http');
-var path = require('path');
 var express = require('express');
+var path = require('path');
 
-var router = express();
-var server = http.createServer(router);
+var server = express();
 
-router.get('*', function(req, res) {
-    res.sendfile('assets/index.html');
+
+server.use('/assets', express.static( path.join( __dirname, 'client/assets' ) ) );
+server.use('/application', express.static( path.join( __dirname, 'client/application' ) ) );
+
+server.get('/', function(req, res) {
+    res.sendfile('client/index.html');
 });
 
 server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){

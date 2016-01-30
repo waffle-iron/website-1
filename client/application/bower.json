@@ -18,6 +18,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular": ""
+    "angular": "",
+    "angular-ui-router": ""
   }
 }
