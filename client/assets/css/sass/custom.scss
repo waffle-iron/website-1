@@ -1,0 +1,9 @@
+@import '../../../application/bower_components/angular-material/angular-material.scss';
+
+html, body { 
+    background: url(../img/background.png) repeat ; 
+}
+
+md-toolbars img {
+    width:100%;
+}

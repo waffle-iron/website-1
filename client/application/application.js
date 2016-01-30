@@ -2,7 +2,7 @@
 
 var application = angular.module('application', ['ui.router', 'ngMaterial']);
 
-application.config(function($stateProvider, $urlRouterProvider) {
+application.config(function($stateProvider, $urlRouterProvider, $mdThemingProvider) {
 	$stateProvider
 	.state('home', {
 		url: '/home',

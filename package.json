@@ -11,6 +11,7 @@
     "socket.io": "",
     "bower": "",
     "grunt": "",
-    "grunt-wiredep": ""
+    "grunt-wiredep": "",
+    "grunt-sass": ""
   }
 }
