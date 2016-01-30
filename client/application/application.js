@@ -1,6 +1,6 @@
 /* global angular */
 
-var application = angular.module('application', ['ui.router']);
+var application = angular.module('application', ['ui.router', 'ngMaterial']);
 
 application.config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider
@@ -9,6 +9,10 @@ application.config(function($stateProvider, $urlRouterProvider) {
 		views: {
 			'': {
 				templateUrl: '/application/templates/home/home.html'
+			},
+			'sidebar@home':{
+				templateUrl: '/application/components/sidebar/sidebar.html',
+				controller: 'AppCtrl'
 			}
 		},
 		data: {
