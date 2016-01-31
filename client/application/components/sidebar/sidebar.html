@@ -1,53 +1,73 @@
 <md-content>
     <md-toolbar>
-        <div class="md-toolbar-tools">
+        <div class="md-toolbar-tools" layout-padding>
+            <img src="assets/img/logo.png" alt="Logo">
             <span>
                 Clean Code Solutions
             </span>
-            
             <span flex></span>
-            
-            <md-button 
-            class="md-raised" 
-            aria-label="Toggle Right"
-            ng-click="toggleRight()"
-            ng-hide="isOpenRight()">
-                Toggle right
+            <md-button
+            aria-label="Contact Us"
+            ng-click="toggleRight()">
+                Contact Us
             </md-button>
         </div>
     </md-toolbar>
 </md-content>
 
-<md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right">
-  <md-toolbar class="md-theme-light">
-    <h1 class="md-toolbar-tools">Sidenav Right</h1>
-  </md-toolbar>
-  <md-content ng-controller="RightCtrl" layout-padding>
-    <form>
-      <md-input-container>
-        <label for="testInput">Test input</label>
-        <input type="text" id="testInput"
-               ng-model="data" md-autofocus>
-      </md-input-container>
-    </form>
-    <md-button ng-click="close()" class="md-primary">
-      Close Sidenav Right
-    </md-button>
-  </md-content>
+<md-sidenav class="md-sidenav-right" md-component-id="right">
+    <md-toolbar>
+        <h3 class="md-toolbar-tools">Contact Us</h3>
+    </md-toolbar>
+    
+    <md-content ng-controller="RightCtrl" layout-padding>
+        <form>
+            <md-content>
+                <div layout-gt-xs="row">
+                    <md-input-container class="md-block" flex-gt-xs>
+                        <label>Company</label>
+                        <input ng-model="user.company">
+                    </md-input-container>
+                </div>
+                
+                <div layout-gt-sm="row">
+                    <md-input-container class="md-block" flex-gt-sm>
+                        <label>First name</label>
+                        <input ng-model="user.firstName">
+                    </md-input-container>
+                    <md-input-container class="md-block" flex-gt-sm>
+                        <label>Last Name</label>
+                        <input ng-model="user.lastName">
+                    </md-input-container>
+                </div>
+                
+                <md-input-container class="md-block">
+                    <label>Message</label>
+                    <textarea ng-model="user.biography" columns="1" md-maxlength="150" rows="5"></textarea>
+                </md-input-container>
+                
+            </md-content>
+        </form>
+        
+        <md-button ng-click="close()">
+            Cancel
+        </md-button>
+    </md-content>
 </md-sidenav>
 
-<md-content layout="row" layout-align="center center" layout-margin>
+
+<md-content layout="row" layout-align="center center">
     <md-card>
-        <md-card-title layout="row" layout-align="center center" layout-margin>
+        <md-card-title layout="row" layout-align="center center" layout-margin layout-padding>
             <div class="md-media-xl">
                 <img src="assets/img/logo.png" alt="Logo">
             </div>
             <md-card-title-text>
                 <span class="md-headline">
-                    Clean Code
+                    <h1>Clean Code</h1>
                 </span>
                 <span class="md-subhead">
-                    James MacKay
+                    <h2>James MacKay</h2>
                 </span>
             </md-card-title-text>
         </md-card-title>

@@ -23,12 +23,7 @@ application.config(function($stateProvider, $urlRouterProvider, $mdThemingProvid
 		$injector.get('$state').go('home');
 	});
    
-   	$mdThemingProvider.theme('black')
-   	.primaryPalette('grey', {
-        'default': '900'
-    })
-    .accentPalette('light-green');
- 
-    $mdThemingProvider.setDefaultTheme('black');
-      
+  	$mdThemingProvider.theme('default')
+    .primaryPalette('grey', { 'default': '900'})
+    .dark();
 });

@@ -10871,11 +10871,15 @@ md-tooltip {
   md-whiteframe {
     border: 1px solid #fff; } }
 
-html, body {
-  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%), url("../img/background.png") repeat; }
+body {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.9) 100%), url("../img/background.png") repeat; }
 
-md-toolbar img {
-  height: 100%; }
+md-toolbar {
+  background-color: transparent !important; }
 
-md-content.md-black-theme {
-  background-color: transparent; }
+img {
+  height: 90% !important;
+  -webkit-filter: drop-shadow(0 2pt 5pt rgba(0, 0, 0, 0.7)) !important; }
+
+md-content {
+  background-color: transparent !important; }
