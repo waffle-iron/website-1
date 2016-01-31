@@ -22,4 +22,13 @@ application.config(function($stateProvider, $urlRouterProvider, $mdThemingProvid
 	$urlRouterProvider.otherwise(function($injector) {
 		$injector.get('$state').go('home');
 	});
+   
+   	$mdThemingProvider.theme('black')
+   	.primaryPalette('grey', {
+        'default': '900'
+    })
+    .accentPalette('light-green');
+ 
+    $mdThemingProvider.setDefaultTheme('black');
+      
 });

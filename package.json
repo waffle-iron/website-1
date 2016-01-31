@@ -12,6 +12,7 @@
     "bower": "",
     "grunt": "",
     "grunt-wiredep": "",
-    "grunt-sass": ""
+    "grunt-sass": "",
+    "mongoose":""
   }
 }

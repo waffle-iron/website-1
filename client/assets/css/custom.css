@@ -10872,7 +10872,10 @@ md-tooltip {
     border: 1px solid #fff; } }
 
 html, body {
-  background: url(../img/background.png) repeat; }
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%), url("../img/background.png") repeat; }
 
-md-toolbars img {
-  width: 100%; }
+md-toolbar img {
+  height: 100%; }
+
+md-content.md-black-theme {
+  background-color: transparent; }
