@@ -10880,9 +10880,13 @@ body {
   text-align: justify; }
 
 .transparent {
-  background-color: transparent !important;
+  background-color: transparent;
   border: none;
   box-shadow: none; }
+
+.fixedBottom {
+  position: fixed;
+  bottom: 0; }
 
 md-content {
   background-color: transparent !important; }

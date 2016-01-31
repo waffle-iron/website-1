@@ -1,4 +1,4 @@
-<md-toolbar class="transparent">
+<md-toolbar class="md-whiteframe-glow-z1 site-content-toolbar">
     <div class="md-toolbar-tools" layout-padding>
         <img src="assets/img/logo.png" alt="Logo" width="100px" height="60px">
         <span>
@@ -10,43 +10,3 @@
         </md-button>
     </div>
 </md-toolbar>
-
-<md-sidenav class="md-sidenav-right" md-component-id="right">
-    <md-toolbar class="transparent">
-        <h3 class="md-toolbar-tools">Contact Us</h3>
-    </md-toolbar>
-    <form layout-padding>
-        <div layout-gt-sm="row">
-            <md-input-container class="md-block" flex-gt-sm>
-                <label>First name</label>
-                <input ng-model="user.firstName">
-            </md-input-container>
-            <md-input-container class="md-block" flex-gt-sm>
-                <label>Last Name</label>
-                <input ng-model="user.lastName">
-            </md-input-container>
-        </div>
-        
-        <div layout-gt-xs="row">
-            <md-input-container class="md-block" flex-gt-xs>
-                <label>Email</label>
-                <input ng-model="user.email">
-            </md-input-container>
-        </div>
-        
-        <div layout-gt-xs="row">
-            <md-input-container class="md-block" flex-gt-xs>
-                <label>Company</label>
-                <input ng-model="user.company">
-            </md-input-container>
-        </div>
-        
-        <md-input-container class="md-block">
-            <label>Message</label>
-            <textarea ng-model="user.biography" columns="1" md-maxlength="250" rows="10"></textarea>
-        </md-input-container>
-    </form>
-    <md-button ng-click="toggleRight()">
-        Cancel
-    </md-button>
-</md-sidenav>

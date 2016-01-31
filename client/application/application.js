@@ -14,6 +14,10 @@ application.config(function($stateProvider, $urlRouterProvider, $mdThemingProvid
 				templateUrl: '/application/components/navigation/navigation.html',
 				controller: 'navigation'
 			},
+			'contactUs@home':{
+				templateUrl: '/application/components/contactUs/contactUs.html',
+				controller: 'contactUs'
+			},
 			'content@home':{
 				templateUrl: '/application/components/content/content.html'
 			}
