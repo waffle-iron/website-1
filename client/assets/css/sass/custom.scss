@@ -1,17 +1,19 @@
 @import '../../../application/bower_components/angular-material/angular-material.scss';
 
-body { 
+html {
+    min-height:100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.9) 100%), url('../img/background.png') repeat;
+    background-attachment: fixed;
 }
 
+body {
+    text-align: justify;
+}
 
-md-toolbar{
+.transparent{
     background-color: transparent !important;
-}
-
-img {
-    height: 90% !important;
-    -webkit-filter: drop-shadow(0 2pt 5pt rgba(0, 0, 0, 0.7)) !important;
+    border: none;
+    box-shadow: none;
 }
 
 md-content {

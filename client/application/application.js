@@ -10,9 +10,12 @@ application.config(function($stateProvider, $urlRouterProvider, $mdThemingProvid
 			'': {
 				templateUrl: '/application/templates/home/home.html'
 			},
-			'sidebar@home':{
-				templateUrl: '/application/components/sidebar/sidebar.html',
-				controller: 'AppCtrl'
+			'navigation@home':{
+				templateUrl: '/application/components/navigation/navigation.html',
+				controller: 'navigation'
+			},
+			'content@home':{
+				templateUrl: '/application/components/content/content.html'
 			}
 		},
 		data: {
