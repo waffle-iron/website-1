@@ -7,7 +7,6 @@ html {
 }
 
 body {
-    margin-top: 60px;
     text-align: justify;
 }
 
@@ -18,8 +17,8 @@ body {
 }
 
 .fixedTop {
-    position: fixed;
-    top: 0;
+    position: fixed !important;
+    top: 0 !important;
 }
 
 md-content {

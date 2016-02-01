@@ -10877,7 +10877,6 @@ html {
   background-attachment: fixed; }
 
 body {
-  margin-top: 60px;
   text-align: justify; }
 
 .transparent {
@@ -10886,8 +10885,8 @@ body {
   box-shadow: none; }
 
 .fixedTop {
-  position: fixed;
-  top: 0; }
+  position: fixed !important;
+  top: 0 !important; }
 
 md-content {
   background-color: transparent !important; }
