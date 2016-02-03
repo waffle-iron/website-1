@@ -10873,11 +10873,11 @@ md-tooltip {
 
 html {
   min-height: 100%;
-  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.9) 100%), url("../img/background.png") repeat;
+  background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.9) 50%, transparent 100%), url("../img/background.png") repeat;
   background-attachment: fixed; }
 
-body {
-  text-align: justify; }
+.highlight {
+  color: #96c850 !important; }
 
 .transparent {
   background-color: transparent !important;

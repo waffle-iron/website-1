@@ -1,6 +1,6 @@
 /* global angular */
 
-var application = angular.module('application', ['ui.router', 'ngMaterial']);
+var application = angular.module('application', ['ui.router', 'ngMaterial', 'ngAnimate']);
 
 application.config(function($stateProvider, $urlRouterProvider, $mdThemingProvider) {
 	$stateProvider
@@ -20,6 +20,9 @@ application.config(function($stateProvider, $urlRouterProvider, $mdThemingProvid
 			},
 			'content@home':{
 				templateUrl: '/application/components/content/content.html'
+			},
+			'tabset@home':{
+				templateUrl: '/application/components/tabset/tabset.html'
 			}
 		},
 		data: {
@@ -31,5 +34,7 @@ application.config(function($stateProvider, $urlRouterProvider, $mdThemingProvid
 	});
    
   	$mdThemingProvider.theme('default')
-    .primaryPalette('grey', { 'default': '900'});
+    .primaryPalette('grey', { 'default': '900'})
+    .accentPalette('grey')
+    .dark();
 });
