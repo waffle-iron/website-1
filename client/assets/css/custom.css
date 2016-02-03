@@ -10876,6 +10876,9 @@ html {
   background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.9) 50%, transparent 100%), url("../img/background.png") repeat;
   background-attachment: fixed; }
 
+.center {
+  text-align: center; }
+
 .highlight {
   color: #96c850 !important; }
 

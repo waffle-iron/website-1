@@ -5,6 +5,9 @@ html {
     background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 100%), url('../img/background.png') repeat;
     background-attachment: fixed;
 }
+.center{
+    text-align: center;
+}
 
 .highlight {
     color: rgba(150, 200, 80, 1) !important;
