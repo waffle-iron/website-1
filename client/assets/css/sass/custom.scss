@@ -11,7 +11,8 @@ body {
 }
 
 .transparent {
-    background-color: transparent;
+    background-color: transparent !important;
+    color: rgba(255, 255, 255, 1) !important;
     border: none;
     box-shadow: none;
 }

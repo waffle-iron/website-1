@@ -31,6 +31,5 @@ application.config(function($stateProvider, $urlRouterProvider, $mdThemingProvid
 	});
    
   	$mdThemingProvider.theme('default')
-    .primaryPalette('grey', { 'default': '900'})
-    .dark();
+    .primaryPalette('grey', { 'default': '900'});
 });

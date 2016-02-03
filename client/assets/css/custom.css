@@ -10880,7 +10880,8 @@ body {
   text-align: justify; }
 
 .transparent {
-  background-color: transparent;
+  background-color: transparent !important;
+  color: white !important;
   border: none;
   box-shadow: none; }
 
