@@ -50,7 +50,7 @@ application.config(function($stateProvider, $urlRouterProvider, $mdThemingProvid
         'A200': '#595959',
         'A400': '#666666',
         'A700': '#000000'
-    });
+  });
 
     $mdThemingProvider
     .definePalette('customAccent',{
@@ -69,28 +69,10 @@ application.config(function($stateProvider, $urlRouterProvider, $mdThemingProvid
         'A400': '#f3f9eb',
         'A700': '#537424'
     });
-    
-    $mdThemingProvider
-    .definePalette('customBackground',{
-        '50': '#000000',
-        '100': '#ffffff',
-        '200': '#ffffff',
-        '300': '#ffffff',
-        '400': '#ffffff',
-        '500': '#ffffff',
-        '600': '#ffffff',
-        '700': '#ffffff',
-        '800': '#000000',
-        '900': '#ffffff',
-        'A100': '#ffffff',
-        'A200': '#ffffff',
-        'A400': '#ffffff',
-        'A700': '#ffffff'
-    });
 
    $mdThemingProvider.theme('default')
    .primaryPalette('customPrimary')
    .accentPalette('customAccent')
-   .backgroundPalette('customBackground')
+   .backgroundPalette('grey', { 'default': '900'})
    .dark();
 });
