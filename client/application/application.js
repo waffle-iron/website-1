@@ -33,8 +33,64 @@ application.config(function($stateProvider, $urlRouterProvider, $mdThemingProvid
 		$injector.get('$state').go('home');
 	});
    
-  	$mdThemingProvider.theme('default')
-    .primaryPalette('grey', { 'default': '900'})
-    .accentPalette('grey')
-    .dark();
+   
+    $mdThemingProvider
+    .definePalette('customPrimary', {
+        '50': '#404040',
+        '100': '#333333',
+        '200': '#262626',
+        '300': '#1a1a1a',
+        '400': '#0d0d0d',
+        '500': '#ffffff',
+        '600': '#000000',
+        '700': '#000000',
+        '800': '#000000',
+        '900': '#000000',
+        'A100': '#4d4d4d',
+        'A200': '#595959',
+        'A400': '#666666',
+        'A700': '#000000'
+    });
+
+    $mdThemingProvider
+    .definePalette('customAccent',{
+        '50': '#d0e6b1',
+        '100': '#c5e09e',
+        '200': '#b9da8a',
+        '300': '#add477',
+        '400': '#a2ce63',
+        '500': '#96C850',
+        '600': '#8ac23d',
+        '700': '#7cae37',
+        '800': '#6f9b31',
+        '900': '#61872b',
+        'A100': '#dcedc4',
+        'A200': '#e7f3d8',
+        'A400': '#f3f9eb',
+        'A700': '#537424'
+    });
+    
+    $mdThemingProvider
+    .definePalette('customBackground',{
+        '50': '#000000',
+        '100': '#ffffff',
+        '200': '#ffffff',
+        '300': '#ffffff',
+        '400': '#ffffff',
+        '500': '#ffffff',
+        '600': '#ffffff',
+        '700': '#ffffff',
+        '800': '#000000',
+        '900': '#ffffff',
+        'A100': '#ffffff',
+        'A200': '#ffffff',
+        'A400': '#ffffff',
+        'A700': '#ffffff'
+    });
+
+   $mdThemingProvider.theme('default')
+   .primaryPalette('customPrimary')
+   .accentPalette('customAccent')
+   .backgroundPalette('customBackground')
+   .dark();
 });
