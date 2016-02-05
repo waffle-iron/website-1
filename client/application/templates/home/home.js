@@ -6,7 +6,7 @@ application.factory('toggleRight', function ( $mdSidenav ) {
             $mdSidenav( navID )
             .toggle()
             .then(function () {
-                //after toggle  
+                return navID; 
             });
         };
     })('right');

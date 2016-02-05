@@ -1,10 +1,15 @@
-@import '../../../application/bower_components/angular-material/angular-material.scss';
+@import '../../application/bower_components/angular-material/angular-material.scss';
 
 html {
     min-height:100%;
     background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 100%), url('../img/background.png') repeat;
     background-attachment: fixed;
 }
+
+img {
+       
+}
+
 .center{
     text-align: center;
 }

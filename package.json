@@ -10,9 +10,20 @@
     "express": "",
     "socket.io": "",
     "bower": "",
-    "grunt": "",
-    "grunt-wiredep": "",
-    "grunt-sass": "",
-    "mongoose":""
+    "sass": "",
+    "jshint": "",
+    "karma": ""
+  },
+  "scripts": {
+    "build-css": "sass client/assets/sass/custom.scss client/assets/css/custom.css",
+    "lint": "jshint client/application/components/**",
+    "karma": "karma start karma.conf.js",
+    "test": "npm run lint && npm run karma",
+    "build": "npm run build-css  && node server.js"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma-jasmine": "^0.3.7",
+    "karma-phantomjs-launcher":""
   }
 }

@@ -1,6 +1,6 @@
 /* global application*/
 
 application
-.controller('contactUs', function ($scope, $timeout, $mdSidenav, $log, toggleRight) {
+.controller('contactUs', function ($scope, toggleRight) {
     $scope.toggleRight = toggleRight;
-})
+});
