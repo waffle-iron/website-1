@@ -103,11 +103,19 @@ th {
 .carousel-caption{
 	text-align:
 		right;
+	top:
+		0;
+	right:
+		0;
 }
 
 .img-caption{
+	display:
+		inline-block;
+	padding:
+		2.5%;
 	background-color:
-		rgba(0, 0, 0, .05);
+		rgba(0, 0, 0, .6);
 }
 
 #logo {
