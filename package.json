@@ -1,29 +1,26 @@
 {
-  "name": "cleancode.solutions",
-  "version": "0.0.0",
-  "description": "",
-  "main": "server.js",
-  "repository": "",
-  "author": "James MacKay <contact-us@cleancode.solutions>",
-  "dependencies": {
-    "async": "",
-    "express": "",
-    "socket.io": "",
-    "bower": "",
-    "sass": "",
-    "jshint": "",
-    "karma": ""
-  },
-  "scripts": {
-    "build-css": "sass client/assets/sass/custom.scss client/assets/css/custom.css",
-    "lint": "jshint client/application/components/**",
-    "karma": "karma start karma.conf.js",
-    "test": "npm run lint && npm run karma",
-    "build": "npm run build-css  && node server.js"
-  },
-  "devDependencies": {
-    "jasmine-core": "^2.4.1",
-    "karma-jasmine": "^0.3.7",
-    "karma-phantomjs-launcher":""
-  }
+	"name": 
+		"cleancode.solutions",
+	"version": 
+		"0.0.0",
+	"description": 
+		"",
+	"main": 
+		"server.js",
+	"repository": 
+		"",
+	"author": 
+		"James MacKay <contact-us@cleancode.solutions>",
+	"dependencies": {
+		"express": 
+			"",
+		"less": 
+			"",
+		"uglify-js": 
+			""
+	},
+	"scripts": {
+		"build-bower-js" : 
+			"cd ~/workspace/server/bower && bower-installer && rm -f ~/workspace/client/assets/js/bower.min.js && cd ./lib && find . -name '*.js' | sort -r | xargs uglifyjs >> ~/workspace/client/assets/js/bower.min.js"
+	}
 }
