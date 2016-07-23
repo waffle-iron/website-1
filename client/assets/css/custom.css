@@ -2,32 +2,29 @@ body {
 	min-height: 
 		100%;
 	background: 
-	    linear-gradient(
-		    to top, 
-		    black 0%, 
-		    rgba(
-		    	0, 
-		    	0, 
-		    	0, 
-		    	0.9
-		    ) 50%, 
-		    transparent 100%
-	    ), 
-	    url(
-	    	"../img/background.png"
-	    ) 
-	    repeat;
-	    
-	background-attachment: 
-		fixed; 
+	    #EEEEEE;
 	
+}
+
+h1 {
+	font-size: 
+		600%;
+	margin-top: 
+		10%;
+}
+
+th {
+	font-size:
+		150%;
+	text-align: 
+		center;
 }
 
 .container {
 	background:
 		white;
 	box-shadow:
-		0px 0px 10px black;
+		0px 0px 10px #CCCCCC;
 }
 
 .highlight {
@@ -54,11 +51,66 @@ body {
 		100%;
 	width:
 		100%;
+	padding:
+		15px;
+	overflow:
+		hidden;
+}
+
+.rectangle {
+	padding-bottom:
+		47.5%;
+	position:
+		relative;
+}
+
+.rectangle-content {
+	position:
+		absolute;
+	top:
+		0;
+	left:
+		0;
+	height:
+		100%;
+	width:
+		100%;
+	padding:
+		15px;
+	overflow:
+		auto;
+}
+
+.no-margin {
+	margin:
+		0;
+}
+
+.carousel, carousel-inner, item {
+	height: 100%;
+}
+
+.shaded{
+	background:
+		#FAFAFA;	
+}
+
+.navbar-default{
+	background-color:
+		rgba(0, 0, 0, .05)
+}
+
+.carousel-caption{
+	text-align:
+		right;
+}
+
+.img-caption{
+	background-color:
+		rgba(0, 0, 0, .05);
 }
 
 #logo {
-	background:
-		black;	
 	background-image: 
 		url('../img/logo.png');
 	background-size: 
@@ -68,14 +120,25 @@ body {
     background-position: 
     	center; 
     color:
-    	#888;
+    	#3333333;
 }
 
-#footer {
-	background:
-		black;
-	color:
-		#666;
-	padding:
+
+#navigation {
+	position: 
+		absolute;
+	bottom:
 		5%;
+	left:
+		5%;
+	right:
+		5%;
+}
+
+#details {
+}
+
+#contact-form {
+	overflow:
+		auto;
 }
