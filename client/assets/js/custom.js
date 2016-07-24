@@ -9,7 +9,7 @@ window
                     scrollTop: (
                         $("#carousel")
                         .offset()
-                        .top+20
+                        .top-55
                     )
                 },
                 500
@@ -26,7 +26,7 @@ window
                     scrollTop: (
                         $("#carousel")
                         .offset()
-                        .top+20
+                        .top-55
                     )
                 },
                 500
