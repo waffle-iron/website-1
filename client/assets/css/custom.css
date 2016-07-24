@@ -7,10 +7,8 @@ body {
 }
 
 h1 {
-	font-size: 
-		600%;
-	margin-top: 
-		10%;
+	font-size:
+		450%;
 }
 
 th {
@@ -47,14 +45,12 @@ th {
 		0;
 	left:
 		0;
-	height:
-		100%;
-	width:
-		100%;
+	right:
+		0;
+	bottom:
+		0;
 	padding:
 		15px;
-	overflow:
-		hidden;
 }
 
 .rectangle {
@@ -71,14 +67,12 @@ th {
 		0;
 	left:
 		0;
-	height:
-		100%;
-	width:
-		100%;
+	right:
+		0;
+	bottom:
+		0;
 	padding:
 		15px;
-	overflow:
-		auto;
 }
 
 .no-margin {
@@ -86,18 +80,21 @@ th {
 		0;
 }
 
-.carousel, carousel-inner, item {
-	height: 100%;
+.carousel, .carousel-inner, .item {
+	height: 
+		100%;
+}
+
+.item img {
+	max-height:
+		100%;
+	width:
+		auto;
 }
 
 .shaded{
 	background:
 		#FAFAFA;	
-}
-
-.navbar-default{
-	background-color:
-		rgba(0, 0, 0, .05)
 }
 
 .carousel-caption{
@@ -118,6 +115,19 @@ th {
 		rgba(0, 0, 0, .6);
 }
 
+.vertical-center-parent {
+    display:
+    	table;
+    height:
+    	100%;
+}
+.vertical-center-child {
+    display:
+    	table-cell;
+    vertical-align:
+    	middle;
+}
+
 #logo {
 	background-image: 
 		url('../img/logo.png');
@@ -131,22 +141,27 @@ th {
     	#3333333;
 }
 
-
-#navigation {
-	position: 
-		absolute;
-	bottom:
-		5%;
-	left:
-		5%;
-	right:
-		5%;
-}
-
-#details {
-}
-
-#contact-form {
+#contact {
+	padding-bottom:
+		200%;
 	overflow:
 		auto;
 }
+
+#carousel {
+	max-height:
+		90%;
+}
+
+#navigation {
+	max-height:
+		10%;
+}
+
+#details {
+	padding-bottom:
+		100%;
+	overflow:
+		auto;
+}
+
