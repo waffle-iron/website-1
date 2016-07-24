@@ -115,17 +115,21 @@ th {
 		rgba(0, 0, 0, .6);
 }
 
-.vertical-center-parent {
+.center-parent {
     display:
     	table;
     height:
     	100%;
+    width:
+    	100%;
 }
-.vertical-center-child {
+.center-child {
     display:
     	table-cell;
     vertical-align:
     	middle;
+    text-align:
+    	center;
 }
 
 #logo {
@@ -149,13 +153,12 @@ th {
 }
 
 #carousel {
-	max-height:
-		90%;
+	height:
+		100%;
 }
 
 #navigation {
-	max-height:
-		10%;
+	
 }
 
 #details {
