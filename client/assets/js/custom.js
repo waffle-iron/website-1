@@ -14,6 +14,7 @@ window
                 },
                 500
             );
+            
         }
     );
     
@@ -31,6 +32,7 @@ window
                 },
                 500
             );
+            
         }
     );
     
@@ -38,6 +40,7 @@ window
     .bind(
         'slide.bs.carousel',
         function( e ){
+            
             var index = (
                 $(e.relatedTarget)
                 .index()
