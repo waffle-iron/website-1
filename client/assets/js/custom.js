@@ -9,10 +9,10 @@ window
                     scrollTop: (
                         $("#carousel")
                         .offset()
-                        .top
+                        .top+20
                     )
                 },
-                2000
+                500
             );
         }
     );
@@ -26,10 +26,10 @@ window
                     scrollTop: (
                         $("#carousel")
                         .offset()
-                        .top
+                        .top+20
                     )
                 },
-                2000
+                500
             );
         }
     );
