@@ -40,29 +40,36 @@ th {
 	0 
 	!important;
  }
+ 
+ 
+@media only screen and (max-width : 768px) {
+	.square, .long-rectangle, .rectangle {
+		padding-bottom:
+			100%
+			!important;
+	}
+}
+
+.square, .long-rectangle, .rectangle {
+	position:
+		relative;
+}
 
 .square {
 	padding-bottom:
 		100%;
-	position:
-		relative;
 }
 
 .long-rectangle {
 	padding-bottom:
 		32%;
-	position:
-		relative;
 	background:
 		url(../img/striped-background.png);
 }
 
 .rectangle {
-	
 	padding-bottom:
 		47.5%;
-	position:
-		relative;
 }
 
 .inner-content {
