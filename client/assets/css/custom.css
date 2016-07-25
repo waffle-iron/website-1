@@ -76,6 +76,8 @@ th {
 		0;
 	bottom:
 		0;
+	height:
+		100%;
 	padding:
 		15px;
 }
@@ -99,8 +101,25 @@ th {
 .img-caption{
 	display:
 		inline-block;
+	padding:
+		15px;
 	background-color:
-		rgba(0, 0, 0, .6);
+		rgba(0, 0, 0, .3);
+}
+
+.carousel-caption{
+	left:
+		15px
+		!important;
+	bottom:
+		15px
+		!important;
+	text-align:
+		left 
+		!important;
+	padding:
+		0
+		!important;
 }
 
 .center-parent {
