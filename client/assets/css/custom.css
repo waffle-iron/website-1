@@ -42,7 +42,7 @@ th {
  }
  
  
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 992px) {
 	.square, .long-rectangle, .rectangle {
 		padding-bottom:
 			100%
@@ -95,10 +95,18 @@ th {
 }
 
 .item img {
+	position:
+		absolute;
+	right:
+		-50%;
+	left:
+		-50%;
 	display:
 		block;
 	margin:
 		0 auto;
+	height:
+		100%;
 	max-height:
 		100%;
 	width:
