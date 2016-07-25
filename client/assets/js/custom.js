@@ -21,7 +21,7 @@ window
     $('#hosting-link')
     .click(
         function(){
-            $('body')
+            $('html, body')
             .animate(
                 {
                     scrollTop: (
