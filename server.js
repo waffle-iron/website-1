@@ -1,8 +1,22 @@
 var http = require( 'http' );
 var express = require( 'express' );
 var path = require( 'path' );
+var favicon = require ( 'serve-favicon' );
 
 var server = express();
+
+server
+.use(
+    favicon(
+        path
+        .join( 
+            __dirname,
+            'client',
+            'assets',
+            'img',
+            'logo.ico')
+    )
+);
 
 
 server

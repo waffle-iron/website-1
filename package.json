@@ -14,13 +14,9 @@
 	"dependencies": {
 		"express": 
 			"",
-		"less": 
-			"",
 		"uglify-js": 
+			"",
+		"serve-favicon" :
 			""
-	},
-	"scripts": {
-		"build-bower-js" : 
-			"cd ~/workspace/server/bower && bower-installer && rm -f ~/workspace/client/assets/js/bower.min.js && cd ./lib && find . -name '*.js' | sort -r | xargs uglifyjs >> ~/workspace/client/assets/js/bower.min.js"
 	}
 }
