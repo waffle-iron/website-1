@@ -125,7 +125,7 @@ window
                     
                     $('#alerts')
                     .append(
-                        '<div class="alert alert-error alert-dismissible">' 
+                        '<div class="alert alert-danger alert-dismissible">' 
                         + '<button type="button" class="close" data-dismiss="alert">' 
                         + '&times;</button>' 
                         + 'Hmmm, looks like something went wrong - Please try again later' 

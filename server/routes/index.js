@@ -69,7 +69,7 @@ router
     '/', 
     function(req, res) {
         res
-        .sendfile(
+        .sendFile(
             path
             .join( 
                 __dirname,
