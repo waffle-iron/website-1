@@ -27,7 +27,8 @@ server
         path
         .join( 
             __dirname, 
-            'client/assets' 
+            'client',
+            'assets' 
         ) 
     ) 
 );

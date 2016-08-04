@@ -32,46 +32,195 @@ ng-app="application">
     
     <body>
         
-        <div
-        id="navigation"
-        class="row">
         
-            <nav 
-            class="navbar navbar-fixed-top navbar-default ">
-            
-                <div
-                class="container-fluid">
-                    
-                    <div 
-                    class="nav navbar-header">
-                    
-                        <a
-                        id="web-design-link"
-                        class="navbar-brand"
-                        href="#carousel"
-                        data-slide-to="0">
-                            
-                            Web Design
-            
-                        </a>
-                        
-                        <a
-                        id="hosting-link"
-                        class="navbar-brand"
-                        href="#carousel"
-                        data-slide-to="1">
-                            
-                            Hosting
-            
-                        </a>
-                    
-                    
-                    </div>
+        <nav 
+        class="navbar navbar-fixed-top navbar-default ">
+        
+            <div
+            class="container-fluid">
                 
+                <div 
+                class="navbar-header">
+                    
+                    <a 
+                    class="navbar-brand" 
+                    href="#">
+                        
+                        <img 
+                        alt="Clean Code Solutions logo" 
+                        src="/assets/img/logo.png">
+                    
+                    </a>
+
+                    
+                    <button 
+                    type="button" 
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse" 
+                    data-target="#navbar-content" 
+                    aria-expanded="false">
+                    
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    
+                    </button>
+                    
+                </div>
+                
+                <div
+                id="navbar-content"
+                class="collapse navbar-collapse">
+                    
+                    <ul 
+                    class="nav navbar-nav">
+                        
+                        <li>
+
+                            <a
+                            class="web-design-link hidden-xs"
+                            href="#carousel"
+                            data-slide-to="0">
+                                
+                                Web Design
+                
+                            </a>
+                            
+                            <a
+                            class="web-design-link visible-xs"
+                            href="#carousel"
+                            data-slide-to="0"
+                            data-toggle="collapse" 
+                            data-target="#navbar-content">
+                                
+                                Web Design
+                
+                            </a>
+                    
+                        </li>
+                
+                    </ul>
+                    
+                    <ul 
+                    class="nav navbar-nav navbar-right">
+                        
+                        <button 
+                        type="button" 
+                        class="toggle-contact btn btn-primary navbar-btn hidden-xs"
+                        aria-expanded="false">
+                                
+                                Contact Us
+                        
+                        </button>
+                        
+                        <li>
+                            
+                            <a
+                            class="toggle-contact visible-xs"
+                            data-toggle="collapse" 
+                            data-target="#navbar-content"
+                            aria-expanded="false">
+                                    
+                                    Contact Us
+                            
+                            </a>
+                            
+                        </li>
+                    
+                    </ul>
+                    
                 </div>
             
-            </nav>
+            </div>
+        
+        </nav>
             
+        <div
+        id="contact"
+        class="hidden-parent toggle-hidden">
+                
+            <div 
+            class="hidden-child">
+                
+                <div
+                class="panel panel-default">
+                    
+                    <div
+                    class="panel-heading">
+                    
+                        <h2>
+                           Contact Us 
+                        </h2>
+                        
+                        <a 
+                        class="toggle-contact pull-right"
+                        aria-expanded="false">
+                                
+                            <span 
+                            class="glyphicon glyphicon-remove-sign" 
+                            aria-hidden="true">
+                            </span>
+                        
+                        </a>
+                    
+                    </div>
+                    
+                    <div
+                    class="panel-body">
+                    
+                        <div 
+                        id="google-maps-canvas" 
+                        style="height:100%; width:100%;max-width:100%;">
+                            
+                            <iframe 
+                            style="height:100%;width:100%;border:0;" 
+                            frameborder="0" 
+                            src="https://www.google.com/maps/embed/v1/place?q=859+Grosvenor+Avenue,+Winnipeg,+MB,+Canada&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU">
+                            </iframe>
+                        
+                        </div>
+                    
+                    </div>
+                    
+                    <table
+                    class="table">
+                        
+                        <tr>
+                            
+                            <td>
+                                Mail:
+                            </td>
+                            
+                            <td>
+                                859 Grosvenor Ave.
+                            </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            
+                            <td>
+                                Phone:
+                            </td>
+                            
+                            <td>
+                                
+                                <a href="tel:+1-204-612-7611">
+                                
+                                    +1 (204) 612-7611
+                                
+                                </a>
+                                
+                            </td>
+                            
+                        </tr>
+                        
+                    </table>
+                
+                </div>
+                
+            </div>
+        
         </div>
         
         <div 
@@ -84,12 +233,25 @@ ng-app="application">
                 class="col-md-4">
                     
                     <div
-                    id="logo"
                     class="row square shaded">
                         
-                        <div 
+                        <div
+                        id="logo"
                         class="inner-content">
-                        
+                            
+                            <div
+                            class="center-parent">
+                                
+                                <div
+                                class="center-child">
+                                    
+                                    <img 
+                                    alt="Clean Code Solutions logo" 
+                                    src="/assets/img/logo.png">
+                                                    
+                                </div>
+                            
+                            </div>
                             
                         </div>
                         
@@ -141,6 +303,8 @@ ng-app="application">
                         <div 
                         class="carousel-inner">
                             
+                            
+                            <!-- START webdev section-->
                             <div 
                             class="item active">
                                 
@@ -174,9 +338,9 @@ ng-app="application">
                                                     <div
                                                     class="img-caption">
                                                 
-                                                        <h3>
+                                                        <h2>
                                                             Web Design
-                                                        </h3>
+                                                        </h2>
                                                         
                                                         <p>
                                                             Fast & affordable web design
@@ -228,8 +392,7 @@ ng-app="application">
                                     class="col-md-4">
                                         
                                         <div
-                                        id="contact"
-                                        class="row square shaded ">
+                                        class="row square shaded">
                                             
                                             <div 
                                             class="inner-content">
@@ -274,7 +437,10 @@ ng-app="application">
                                 </div>
                          
                             </div>
+                            <!-- END webdev section-->
                             
+                            
+                            <!-- START hosting section-->
                             <div 
                             class="item">
                                 
@@ -409,7 +575,9 @@ ng-app="application">
                                 </div>
                          
                             </div>
-        
+                            <!-- END hosting section-->
+                            
+                            
                         </div>
                     
                     </div>
@@ -452,56 +620,7 @@ class="col-md-4">
         <div 
         class="inner-content">
             
-            <table
-            class="table">
-                
-                <tr>
-                    
-                    <td>
-                        Mail:
-                    </td>
-                    
-                    <td>
-                        859 Grosvenor Ave.
-                    </td>
-                    
-                </tr>
-                
-                <tr>
-                    
-                    <td>
-                        Phone:
-                    </td>
-                    
-                    <td>
-                        
-                        <a href="tel:+1-204-612-7611">
-                        
-                            +1 (204) 612-7611
-                        
-                        </a>
-                        
-                    </td>
-                    
-                </tr>
-                
-            </table>
             
-            <div 
-            style="width:100%; height:50%">
-                
-                <div 
-                id="google-maps-canvas" 
-                style="height:100%; width:100%;max-width:100%;">
-                    
-                    <iframe 
-                    style="height:100%;width:100%;border:0;" 
-                    frameborder="0" 
-                    src="https://www.google.com/maps/embed/v1/place?q=859+Grosvenor+Avenue,+Winnipeg,+MB,+Canada&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU">
-                    </iframe>
-                </div>
-                
-            </div>
             
         </div>
         
