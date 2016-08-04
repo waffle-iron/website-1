@@ -1,63 +1,36 @@
+
+
+/* Overwrite CSS defaults */
+
 h1, h2, h3 {
     display: 
     	inline-block;
 }
-
+h1 {
+	font-size:
+		600%;
+}
 a {
 	cursor:
 		pointer;
 }
 
-body {
-	min-height: 
-		100%;
-	background: 
-	    #EEEEEE;
-	position:
-		relative;
-	overflow-x:
-		hidden;
-	
-}
 
-h1 {
-	font-size:
-		600%;
-}
-
-th {
-	font-size:
-		150%;
-	text-align: 
-		center;
-}
-
-.container {
-	background:
-		white;
-	box-shadow:
-		0px 0px 10px #CCCCCC;
-	margin-top:
-		30px;
-}
-
-.navbar-brand img {
-	height:
-		80%;
-}
+/* Overwrite Bootstrap defaults */
 
 .row {
 	margin:
 		0
 		!important;
 }
-
 .col-md-12, .col-md-4, .col-md-8, .container {
    padding: 
 	0 
 	!important;
  }
  
+ 
+ /* Define Square and Rectangle behavior */
  
 @media only screen and (max-width : 992px) {
 	.square, .long-rectangle, .rectangle {
@@ -66,29 +39,24 @@ th {
 			!important;
 	}
 }
-
 .square, .long-rectangle, .rectangle {
 	position:
 		relative;
 }
-
 .square {
 	padding-bottom:
 		100%;
 }
-
 .long-rectangle {
 	padding-bottom:
 		32%;
 	background:
 		url(../img/striped-background.png);
 }
-
 .rectangle {
 	padding-bottom:
 		47.5%;
 }
-
 .inner-content {
 	position:
 		absolute;
@@ -106,11 +74,65 @@ th {
 		15px;
 }
 
+
+/* General page styling */
+
+body {
+	min-height: 
+		100%;
+	background: 
+	    #EEEEEE;
+	position:
+		relative;
+	overflow-x:
+		hidden;
+	
+}
+.container {
+	background:
+		white;
+	box-shadow:
+		0px 0px 10px #CCCCCC;
+	margin-top:
+		30px;
+}
+
+
+/* Navbar styling */
+
+.navbar-brand img {
+	height:
+		80%;
+}
+
+
+/* Content styling */
+
+#logo img{
+	width: 90%;
+	height: auto;
+}
+.shaded{
+	background:
+		#FAFAFA;
+}
+.highlight {
+  color: 
+  	#96c850 
+  	!important; 
+}
+#contact .panel-body{
+	overflow:
+		auto;
+}
+
+
+/* Bootstrap carousel styling */
+
 .carousel, .carousel-inner, .item {
 	height: 
 		100%;
 }
-
 .item img {
 	margin:
 		0 auto;
@@ -119,7 +141,6 @@ th {
 	width:
 		auto;
 }
-
 .img-caption{
 	display:
 		inline-block;
@@ -128,7 +149,6 @@ th {
 	background-color:
 		rgba(0, 0, 0, .3);
 }
-
 .carousel-caption{
 	left:
 		15px
@@ -143,6 +163,9 @@ th {
 		0
 		!important;
 }
+
+
+/* Centering content classes */
 
 .center-parent {
     display:
@@ -162,17 +185,8 @@ th {
     	center;
 }
 
-.shaded{
-	background:
-		#FAFAFA;
-}
 
-.highlight {
-  color: 
-  	#96c850 
-  	!important; 
-}
-
+/* Hiding content classes */
 
 .hidden-parent{
 	position: 
@@ -184,7 +198,6 @@ th {
 	z-index:
 		1;
 }
-
 .hidden-child{
 	position:
 		relative;
@@ -197,13 +210,7 @@ th {
     	.25s;
 	
 }
-
 .hidden-parent.toggle-hidden > .hidden-child{
 	left:
 		-100%;
-}
-
-#logo img{
-	width: 90%;
-	height: auto;
 }
