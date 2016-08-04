@@ -1,11 +1,31 @@
 
 
 /* Overwrite CSS defaults */
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+h1{
+	font-weight: bolder;
+}
 
 h1, h2, h3 {
     display: 
     	inline-block;
 }
+
+h2, h3, h4, .lead {
+	font-family: 'Slabo 27px', serif;
+}
+
+#tagline p{
+	font-size: 150%;
+}
+
+#tagline p.lead{
+	font-size: 250%;
+}
+
 a {
 	cursor:
 		pointer;
@@ -71,9 +91,7 @@ a {
 
 body {
 	min-height: 
-		100%;
-	background: 
-	    #EEEEEE;
+		100%;;
 	position:
 		relative;
 	overflow-x:
@@ -82,8 +100,6 @@ body {
 .container {
 	background:
 		white;
-	box-shadow:
-		0px 0px 10px #CCCCCC;
 	margin-top:
 		30px;
 }
