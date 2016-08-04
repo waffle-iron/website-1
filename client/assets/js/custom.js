@@ -4,7 +4,7 @@ window
     $('.web-design-link')
     .click(
         function(){
-            $('body')
+            $('body, html')
             .animate(
                 {
                     scrollTop: (
