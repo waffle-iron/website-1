@@ -112,6 +112,12 @@ body {
 		5;
 }
 
+label.error{
+	display:
+		none
+		!important;
+}
+
 #logo img{
 	width: 90%;
 	height: auto;

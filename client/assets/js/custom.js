@@ -60,7 +60,6 @@ window
                 
                 $(element)
                 .closest('.form-group')
-                .removeClass('has-success')
                 .addClass('has-error');
                 
             },
@@ -68,8 +67,8 @@ window
                 
                 $(element)
                 .closest('.form-group')
-                .removeClass('has-error')
-                .addClass('has-success');
+                .removeClass('has-error');
+            
             }
         }
     );
@@ -80,6 +79,9 @@ window
             event
             .preventDefault();
             
+            if( !$(form).valid() ) {
+                return;
+            }
             
             $.ajax(
                 {
@@ -101,6 +103,10 @@ window
                     $("#contact-form")[0]
                     .reset();
                     
+                    $(form)
+                    .validate()
+                    .resetForm();
+                    
                     $('button.toggle-contact')
                     .trigger('click');
                     
@@ -116,7 +122,6 @@ window
             )
             .fail(
                 function( response ){
-                    
                     
                     $('#alerts')
                     .append(
