@@ -116,7 +116,10 @@ body {
   	#96c850 
   	!important; 
 }
-
+#contact {
+	width:
+		33%;
+}
 
 /* Bootstrap carousel styling */
 
@@ -192,6 +195,8 @@ body {
 		1;
 }
 .hidden-child{
+	background:
+		#FFFFFF;
 	position:
 		relative;
 	top:
@@ -252,6 +257,10 @@ body {
 			5px
 			30px
 			5px;
+	}
+	#contact{
+		width:
+			100%;
 	}
 
 }
