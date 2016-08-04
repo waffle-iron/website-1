@@ -99,8 +99,18 @@ body {
 		!important;
 }
 
-
 /* Content styling */
+
+#alerts{
+	position:
+		fixed;
+	bottom:
+		15px;
+	right:
+		15px;
+	z-index:
+		5;
+}
 
 #logo img{
 	width: 90%;

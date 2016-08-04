@@ -1,48 +1,25 @@
-var http = require( 'http' );
-var express = require( 'express' );
-var path = require( 'path' );
-var favicon = require ( 'serve-favicon' );
+'use strict';
 
-var server = express();
+var express     = require( 'express' );
+var path        = require( 'path' );
+var server      = express();
+var router      = require( path.resolve( 'server/routes' ) );
 
-server
-.use(
-    favicon(
-        path
-        .join( 
-            __dirname,
-            'client',
-            'assets',
-            'img',
-            'logo.ico')
-    )
-);
 
+/*****************************************************************
+    Use router to handle all requests
+*/
 
 server
 .use(
-    '/assets', 
-    express
-    .static(
-        path
-        .join( 
-            __dirname, 
-            'client',
-            'assets' 
-        ) 
-    ) 
+    '/',
+    router
 );
 
-server
-.get(
-    '/', 
-    function(req, res) {
-        res
-        .sendfile(
-            'client/index.html'
-        );
-    }
-);
+
+/*****************************************************************
+    Start server
+*/
 
 server
 .listen(
@@ -53,6 +30,9 @@ server
     .env
     .IP || "0.0.0.0", 
     function(){
-        //nothing
+        console
+        .log(
+            'Server Started'
+        );
     }
 );

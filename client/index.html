@@ -170,7 +170,10 @@ ng-app="application">
                     <div
                     class="panel-body">
                         
-                        <form>
+                        <form 
+                        id="contact-form"
+                        action="contact/submit" 
+                        method="post">
                             
                             <div 
                             class="form-group">
@@ -180,6 +183,7 @@ ng-app="application">
                                 </label>
                                 
                                 <input 
+                                name="name"
                                 type="text" 
                                 class="form-control" 
                                 placeholder="Your Name">
@@ -194,6 +198,7 @@ ng-app="application">
                                 </label>
                                 
                                 <input 
+                                name="company"
                                 type="text" 
                                 class="form-control" 
                                 placeholder="Your Company Name">
@@ -208,6 +213,7 @@ ng-app="application">
                                 </label>
                                 
                                 <input 
+                                name="email"
                                 type="text" 
                                 class="form-control" 
                                 placeholder="Your Email">
@@ -222,6 +228,7 @@ ng-app="application">
                                 </label>
                               
                                 <textarea 
+                                name="message"
                                 class="form-control" 
                                 rows="5">
                                 </textarea>
@@ -281,6 +288,11 @@ ng-app="application">
                 
             </div>
         
+        </div>
+        
+        <div
+        id="alerts">
+            
         </div>
         
         <div 
@@ -570,6 +582,12 @@ ng-app="application">
         type="text/javascript" 
         src="https://code.jquery.com/jquery-2.2.4.min.js"   
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   
+        crossorigin="anonymous">
+        </script>
+        
+        <script   
+        type="text/javascript" 
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"   
         crossorigin="anonymous">
         </script>
         
