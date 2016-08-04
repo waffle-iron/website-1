@@ -29,6 +29,11 @@ a {
 	!important;
  }
  
+.panel {
+	border:
+		none
+		!important;
+}
  
  /* Define Square and Rectangle behavior */
  
@@ -121,10 +126,6 @@ body {
   	#96c850 
   	!important; 
 }
-#contact .panel-body{
-	overflow:
-		auto;
-}
 
 
 /* Bootstrap carousel styling */
@@ -195,6 +196,8 @@ body {
 		50px;
 	left:
 		0;
+	bottom:
+		0;
 	z-index:
 		1;
 }
@@ -205,6 +208,10 @@ body {
 		0;
     left: 
 		0;
+	height:
+		100%;
+	overflow:
+		auto;
     transition:
     	left 
     	.25s;
@@ -213,4 +220,23 @@ body {
 .hidden-parent.toggle-hidden > .hidden-child{
 	left:
 		-100%;
+}
+
+
+/* Scrollbar styling */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #AAAAAA; 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: #AAAAAA; 
 }
