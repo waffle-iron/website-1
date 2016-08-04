@@ -7,7 +7,7 @@ ng-app="application">
         
         <title>
             
-            Clean Code Solutions - where your vision is our solution
+            Clean Code Solutions - Your Vision. Our Solution.
         
         </title>
         
@@ -32,7 +32,8 @@ ng-app="application">
     
     <body>
         
-        <nav 
+        <nav
+        id="navigation-bar"
         class="navbar navbar-fixed-top navbar-default ">
         
             <div
@@ -48,6 +49,8 @@ ng-app="application">
                         <img 
                         alt="Clean Code Solutions logo" 
                         src="/assets/img/logo.png">
+                        
+                        Clean Code <span class="highlight"> Solutions </span>
                     
                     </a>
 
@@ -236,20 +239,7 @@ ng-app="application">
                         </form>
                         
                         <br>
-                        <!--
-                        <hr>
-                        <div 
-                        id="google-maps-canvas" 
-                        style="height:100%; width:100%;max-width:100%;">
-                            
-                            <iframe 
-                            style="height:100%;width:100%;border:0;" 
-                            frameborder="0" 
-                            src="https://www.google.com/maps/embed/v1/place?q=859+Grosvenor+Avenue,+Winnipeg,+MB,+Canada&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU">
-                            </iframe>
                         
-                        </div>
-                        -->
                         <table
                         class="table">
                             
@@ -296,17 +286,21 @@ ng-app="application">
         <div 
         class="container">
             
+            
+            <!-- START first row -->
             <div 
             class="row">
                 
+                
+                <!-- START logo section -->
                 <div
-                class="col-md-4">
+                id="logo"
+                class="col-md-4 square shaded">
                     
                     <div
-                    class="row square shaded">
+                    class="square shaded">
                         
                         <div
-                        id="logo"
                         class="inner-content">
                             
                             <div
@@ -318,7 +312,13 @@ ng-app="application">
                                     <img 
                                     alt="Clean Code Solutions logo" 
                                     src="/assets/img/logo.png">
-                                                    
+                                    
+                                    <h1>
+                                    
+                                        Clean Code <span class="highlight"> Solutions </span> 
+                                        
+                                    </h1>
+                                    
                                 </div>
                             
                             </div>
@@ -328,7 +328,10 @@ ng-app="application">
                     </div>
                 
                 </div>
-                
+                <!-- END logo section -->
+
+
+                <!-- START title section -->
                 <div
                 class="col-md-8">
                     
@@ -341,12 +344,25 @@ ng-app="application">
                             <div 
                             class="center-parent">
                                 
-                                <h1
+                                <div
                                 class="center-child">
-                                
-                                    Clean Code <span class="highlight"> Solutions </span> 
                                     
-                                </h1>
+                                    <hr>
+                                    
+                                    <p
+                                    class="lead">
+    
+                                        Your <span class="highlight">Vision</span>. Our <span class="highlight">Solution</span>.
+    
+                                    </p>
+                                    
+                                    <p>
+                                        We're an IT solutions firm located in Winnipeg, Manitoba, Canada - Specializing in fully customized websites and webapps.
+                                    </p>
+                                    
+                                    <hr>
+                                                                        
+                                </div>
                             
                             </div>
                             
@@ -355,12 +371,18 @@ ng-app="application">
                     </div>
                     
                 </div>
+                <!-- END title section -->
                     
             </div>
-                
+            <!-- END first row -->
+            
+            
+            <!-- START second row -->
             <div
             class="row">
                 
+                
+                <!-- START carousel section -->
                 <div
                 class="col-md-12">
                         
@@ -378,6 +400,8 @@ ng-app="application">
                             <div 
                             class="item active">
                                 
+                                
+                                <!-- START picture section-->
                                 <div 
                                 class="row">
                                     
@@ -427,7 +451,10 @@ ng-app="application">
                                     </div>
                                     
                                 </div>
-                                
+                                <!-- END picture section-->
+                                    
+                                    
+                                <!-- START details section-->
                                 <div 
                                 class="row">
                                     
@@ -440,17 +467,13 @@ ng-app="application">
                                             <div 
                                             class="inner-content">
                                                 
-                                                <div>
+                                                <p
+                                                class="lead">
                                                     
-                                                    <p
-                                                    class="lead">
-                                                        
-                                                        Our web design services range from creating simple & professional websites to robust & customizable web-applications.
-                                                        Our agile approach keeps you in control, meaning <strong>your</strong> project stays <strong><span class="highlight">your's</span></strong>. 
-                                                        
-                                                    </p>
-                                                        
-                                                </div>
+                                                    Our web design services range from creating simple & professional websites to robust & customizable web-applications.
+                                                    Our agile approach keeps you in control, meaning <strong>your</strong> project stays <strong>your's</strong>. 
+                                                    
+                                                </p>
                                             
                                             </div>
                                             
@@ -505,6 +528,7 @@ ng-app="application">
                                     </div>
                                         
                                 </div>
+                                <!-- END details section-->
                          
                             </div>
                             <!-- END webdev section-->
@@ -518,6 +542,9 @@ ng-app="application">
             </div>
         
         </div>
+        
+        
+        <!-- Load required libraries -->
         
         <script   
         type="text/javascript" 

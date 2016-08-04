@@ -6,10 +6,6 @@ h1, h2, h3 {
     display: 
     	inline-block;
 }
-h1 {
-	font-size:
-		600%;
-}
 a {
 	cursor:
 		pointer;
@@ -99,6 +95,9 @@ body {
 .navbar-brand img {
 	height:
 		80%;
+	display:
+		inline-block
+		!important;
 }
 
 
