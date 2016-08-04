@@ -34,16 +34,10 @@ a {
 		none
 		!important;
 }
+
+
+/* Define Square and Rectangle behavior */
  
- /* Define Square and Rectangle behavior */
- 
-@media only screen and (max-width : 992px) {
-	.square, .long-rectangle, .rectangle {
-		padding-bottom:
-			100%
-			!important;
-	}
-}
 .square, .long-rectangle, .rectangle {
 	position:
 		relative;
@@ -69,16 +63,27 @@ a {
 		0;
 	left:
 		0;
-	right:
-		0;
-	bottom:
-		0;
 	height:
 		100%;
 	padding:
 		15px;
 }
+@media only screen and (max-width : 992px) {
+	.square, .long-rectangle, .rectangle {
+		position:
+			static;
+		padding-bottom:
+			0%;
+		background:
+			#FFFFFF
+			!important;
+	}
+	.inner-content {
+		position:
+			static;
+	}
 
+}
 
 /* General page styling */
 
@@ -226,7 +231,7 @@ body {
 /* Scrollbar styling */
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
  
 ::-webkit-scrollbar-track {
