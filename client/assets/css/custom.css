@@ -270,5 +270,10 @@ body {
 		width:
 			100%;
 	}
+	
+	#logo img{
+		width: 60%;
+		height: auto;
+	}
 
 }
