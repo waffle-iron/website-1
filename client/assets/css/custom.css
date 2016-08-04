@@ -78,7 +78,6 @@ body {
 		relative;
 	overflow-x:
 		hidden;
-	
 }
 .container {
 	background:
@@ -157,7 +156,16 @@ body {
 		0
 		!important;
 }
-
+.carousel .row .square{
+	overflow-y: 
+		auto;
+	overflow-x:
+		hidden;
+}
+.carousel .row .rectangle{
+	text-align: 
+		justify;
+}
 
 /* Centering content classes */
 
@@ -185,14 +193,14 @@ body {
 .hidden-parent{
 	position: 
 		fixed;
+	z-index:
+		1;
 	top:
 		50px;
 	left:
 		0;
 	bottom:
 		0;
-	z-index:
-		1;
 }
 .hidden-child{
 	background:
@@ -212,7 +220,7 @@ body {
     	.25s;
 	
 }
-.hidden-parent.toggle-hidden > .hidden-child{
+.hidden-parent.toggle-hidden > .hidden-child, .toggle-hidden{
 	left:
 		-100%;
 }
@@ -225,11 +233,11 @@ body {
 }
  
 ::-webkit-scrollbar-track {
-    border-radius: 10px;
+    border-radius: 5px;
 }
  
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
+    border-radius: 5px;
     background: #AAAAAA; 
 }
 ::-webkit-scrollbar-thumb:window-inactive {
