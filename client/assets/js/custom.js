@@ -1,12 +1,41 @@
 window
 .onload = function(){
     
+    
+    /***************************************************************************
+    
+    */
+    function startCarousel(){
+        $('#carousel')
+        .carousel('cycle');
+    }
+    function pauseCarousel(){
+        $('#carousel')
+        .carousel('pause');
+    }
+    function modifyCarouselByScreen(){
+      
+        if ( $( window ).width() >= 1440 ) {
+            startCarousel();
+        }
+        else  {
+            pauseCarousel();
+        }
+    }
+    modifyCarouselByScreen();
+    
     $('#carousel')
-    .hover(function () { 
-        $(this).carousel('pause') 
-        }, function () { 
-        $(this).carousel('cycle') 
-    });
+    .hover(
+        pauseCarousel,
+        modifyCarouselByScreen
+    );
+    
+    $( window )
+    .resize(
+        modifyCarouselByScreen
+    );
+    
+    
     
     $('.carousel-link')
     .click(
@@ -31,7 +60,7 @@ window
     .click(
         function () {
             $('#contact')
-            .toggleClass('toggle-hidden')
+            .toggleClass('toggle-hidden');
         }
     );
   
