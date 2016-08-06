@@ -322,11 +322,11 @@ label.error{
 		
 		transition: 
 			box-shadow 
-			1s,
+			.5s,
 			margin-bottom
 			1s,
 			transform
-			1s
+			.5s
 			!important;
 	}
 	.carousel-inner:hover{
