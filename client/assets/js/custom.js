@@ -1,7 +1,14 @@
 window
 .onload = function(){
     
-    $('.web-design-link')
+    $('#carousel')
+    .hover(function () { 
+        $(this).carousel('pause') 
+        }, function () { 
+        $(this).carousel('cycle') 
+    });
+    
+    $('.carousel-link')
     .click(
         function(){
             $('body, html')

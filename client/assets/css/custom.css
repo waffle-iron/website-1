@@ -200,6 +200,7 @@ label.error{
 		justify;
 }
 
+
 /* Centering content classes */
 
 .center-parent {
@@ -309,4 +310,32 @@ label.error{
 		height: auto;
 	}
 
+}
+
+
+/* Large styling */
+
+@media only screen and (min-width : 1200px) {
+	.carousel-inner{
+		box-shadow:
+			none;
+			
+		transition: 
+			box-shadow 
+			1s,
+			margin-bottom
+			1s,
+			transform
+			1s
+			!important;
+	}
+	.carousel-inner:hover{
+		transform:
+			scale(1.25)
+			!important;
+		box-shadow:
+			0 0 50px rgba(0, 0, 0, 0.5);
+		margin-bottom: 
+			50px;
+	}
 }
